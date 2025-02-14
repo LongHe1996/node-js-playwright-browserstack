@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_LongHe1996_node_js_playwright_browserstack_1739518086366-pr-trigger-input-set
+  identifier: Build_LongHe1996_node_js_playwright_browserstack_1739518086366prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: TestHarnessIntegration
+  pipeline:
+    identifier: Build_LongHe1996_node_js_playwright_browserstack_1739518086366
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
