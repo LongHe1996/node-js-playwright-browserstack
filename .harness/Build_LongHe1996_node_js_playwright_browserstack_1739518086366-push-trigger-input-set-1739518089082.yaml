@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_LongHe1996_node_js_playwright_browserstack_1739518086366-push-trigger-input-set
+  identifier: Build_LongHe1996_node_js_playwright_browserstack_1739518086366pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: TestHarnessIntegration
+  pipeline:
+    identifier: Build_LongHe1996_node_js_playwright_browserstack_1739518086366
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
