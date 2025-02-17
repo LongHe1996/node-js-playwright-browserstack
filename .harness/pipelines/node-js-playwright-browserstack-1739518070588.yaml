@@ -33,9 +33,6 @@ pipeline:
                   spec:
                     shell: Sh
                     command: npx browserstack-node-sdk playwright test --config=./playwright.config.js
-                    envVariables:
-                      BROWSERSTACK_ACCESS_KEY: yBQSDVqqLvXqbEsoquBU
-                      BROWSERSTACK_USERNAME: shiyinshen_c3wtBn
                     imagePullPolicy: Always
                   timeout: 10m
           platform:
