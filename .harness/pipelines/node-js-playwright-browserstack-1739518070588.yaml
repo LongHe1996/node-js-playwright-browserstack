@@ -32,12 +32,7 @@ pipeline:
                   identifier: Browserstack
                   spec:
                     shell: Sh
-                    command: |-
-                      wget "https://www.browserstack.com/browserstack-local/BrowserStackLocal-linux-x64.zip"
-                                            unzip BrowserStackLocal-linux-x64.zip
-                                            ./BrowserStackLocal --key $BROWSERSTACK_ACCESS_KEY --daemon start
-                                            <your-test-command>
-                                            ./BrowserStackLocal --key $BROWSERSTACK_ACCESS_KEY --daemon stop
+                    command: npx browserstack-node-sdk playwright test
                     envVariables:
                       BROWSERSTACK_USERNAME: <+secrets.getValue("BROWSERSTACK_USERNAME")>
                       BROWSERSTACK_ACCESS_KEY: <+secrets.getValue("BROWSERSTACK_ACCESS_KEY")>
